@@ -27,7 +27,6 @@ font-family:Georgia, 'Times New Roman', Times, serif;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .scissors {
   background: linear-gradient(to right, #ffff01, #e0e05e);
   -webkit-background-clip: text;
@@ -58,8 +57,8 @@ margin-top: 3rem;
 font-size: 2rem;
 color: #dce7e8;
 }
-#user,#comp{
-  font-size: 4rem;
+#user,#comp,#sl{
+  font-size: 4vw;
   font-style: oblique;
   text-align: center;
 }
@@ -70,10 +69,38 @@ color: #dce7e8;
 }
 #mes{
   padding: .5rem;
-  font-size: 2rem;
+  font-size: 2vw;
   background-color: #a9c2c5;
   border-radius: .5rem;
   display:inline;
   font-style:oblique;
   font-weight: 900;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .choice img {
+    height: 300px; /* Initial height */
+    width: auto; /* Initial width */
+    border-radius: 20%;
+    border-style: groove;
+  }
+  
+  /* Responsive Styling */
+  
+  @media only screen and (max-width: 768px) {
+    /* Your existing media query styles */
+    
+    .choice img {
+      height: 200px; /* Decreased height for smaller screens */
+      width: auto; /* Maintain aspect ratio */
+    }
+  }
+  .scoreboard {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
