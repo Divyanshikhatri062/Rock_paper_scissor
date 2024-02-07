@@ -66,6 +66,7 @@ color: #dce7e8;
   text-align: center;
   color: #021616;
   margin-top: 2rem;
+  margin-bottom:2rem;
 }
 #mes{
   padding: .5rem;
@@ -75,6 +76,7 @@ color: #dce7e8;
   display:inline;
   font-style:oblique;
   font-weight: 900;
+  margin-bottom:2rem;
 }
 @media only screen and (max-width: 768px) {
   .container {
