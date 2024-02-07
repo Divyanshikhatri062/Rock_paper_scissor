@@ -83,7 +83,7 @@ color: #dce7e8;
   }
   
   .choice img {
-    height: 300px; /* Initial height */
+    max-height: 300px; /* Initial height */
     width: auto; /* Initial width */
     border-radius: 20%;
     border-style: groove;
@@ -95,7 +95,7 @@ color: #dce7e8;
     /* Your existing media query styles */
     
     .choice img {
-      height: 200px; /* Decreased height for smaller screens */
+      max-height: 200px; /* Decreased height for smaller screens */
       width: auto; /* Maintain aspect ratio */
     }
   }
