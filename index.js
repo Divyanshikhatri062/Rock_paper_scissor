@@ -11,7 +11,7 @@ const cp=()=>{
 }
 const drawGame = () => {
     msg.innerText = "Game was Draw. Play again.";
-    msg.style.backgroundColor = "#081b31";
+    msg.style.backgroundColor = "yellow";
   };
   
 const sw=(uw,us,userid)=>{
