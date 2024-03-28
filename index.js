@@ -17,13 +17,13 @@ const drawGame = () => {
 const sw=(uw,us,userid)=>{
     if(uw==true){
         uss++;
-uu.innerText=`You win! Your ${userid} beats ${us}!`;
+uu.innerText=`You win! Your ${us} beats ${userid}!`;
 user.innerText=uss;
 uu.style.backgroundColor="green"
     }
     else{
         cd++;
-        uu.innerText=`You lose,${us} beats your ${userid}!`;
+        uu.innerText=`You lose,${userid} beats your ${us}!`;
         comp.innerText=cd;
         uu.style.backgroundColor="red"
     }
