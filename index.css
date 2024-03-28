@@ -39,6 +39,8 @@ font-family:Georgia, 'Times New Roman', Times, serif;
    justify-content: center;
    align-items: center;
    gap:3rem;
+  max-width: 100%; /* Ensuring the choices don't overflow the screen */
+  flex-wrap: wrap;
   
   }
   .choice:hover{
