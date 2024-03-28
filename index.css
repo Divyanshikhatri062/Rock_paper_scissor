@@ -1,10 +1,9 @@
-* {
+*{
   background-color: #262728;
   padding: 0;
   margin: 0;
   text-align: center;
 }
-
 .container {
   display: flex;
   font-style: oblique;
@@ -13,94 +12,97 @@
   justify-content: center;
   padding: 3rem;
 }
-
-.rock, .paper, .scissors {
+.rock, .paper, .scissors{
   font-size: 5vmin;
-  padding: 10px;
-  font-weight: 900;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+padding: 10px;
+font-weight: 900;
+font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
 .rock {
   background: linear-gradient(to right, #ff0180, #93627b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .paper {
   background: linear-gradient(to right, #02d6ee, #55b1bb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 .scissors {
   background: linear-gradient(to right, #ffff01, #e0e05e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.choice {
-  display: inline-block;
-  padding: 20px;
-}
-
-.choice:hover {
-  cursor: pointer;
-  opacity: .5;
-  transform: scale(1.2);
-}
-
-.choice img {
-  height: 300px;
-  width: auto;
-  object-fit: cover;
-  border-radius: 20%;
-  border-style: groove;
-}
-
 .choices {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:3rem;
+  
+  }
+  .choice:hover{
+    cursor: pointer;
+    opacity: .5;
+    transform: scale(1.2);
+  }
+  .choice img {
+    height: 300px;
+    width: auto; 
+    object-fit: cover;
+    border-radius: 20%;
+    border-style: groove;
+  }
+.scoreboard{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+gap: 3rem;
+margin-top: 3rem;
+font-size: 2rem;
+color: #dce7e8;
 }
-
-.scoreboard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 3rem;
-  font-size: 2rem;
-  color: #dce7e8;
-}
-
-#user, #comp, #sl {
+#user,#comp,#sl{
   font-size: 4vw;
   font-style: oblique;
   text-align: center;
 }
-
-.mess {
+.mess{
   text-align: center;
   color: #021616;
   margin-top: 2rem;
 }
-
-#mes {
+#mes{
   padding: .5rem;
   font-size: 2vw;
   background-color: #a9c2c5;
   border-radius: .5rem;
-  display: inline;
-  font-style: oblique;
+  display:inline;
+  font-style:oblique;
   font-weight: 900;
 }
-
 @media only screen and (max-width: 768px) {
   .container {
     text-align: center;
   }
   
   .choice img {
-    max-height: 200px; /* Decreased height for smaller screens */
-    width: auto; /* Maintain aspect ratio */
+    height: 300px; /* Initial height */
+    width: auto; /* Initial width */
+    border-radius: 20%;
+    border-style: groove;
   }
-
+  
+  /* Responsive Styling */
+  
+  @media only screen and (max-width: 768px) {
+    /* Your existing media query styles */
+    
+    .choice img {
+      max-height: 200px; /* Decreased height for smaller screens */
+      width: auto; /* Maintain aspect ratio */
+    }
+  }
   .scoreboard {
     flex-direction: column;
     font-size: 3vw;
