@@ -110,6 +110,7 @@ color: #dce7e8;
   }
   .scoreboard {
     flex-direction: column;
+     font-size: 3vw;
     gap: 1rem;
   }
 }
