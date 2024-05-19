@@ -95,8 +95,14 @@ color: #dce7e8;
     border-radius: 20%;
     border-style: groove;
   }
-  .scoreboard {
-     font-size: 2vw;
+.scoreboard {
+     font-size: 3vw;
     gap: 1rem;
+  }
+  #user,#comp,#sl{
+    font-size: 4vw;
+  }
+  #mes{
+    font-size: 3vw;
   }
 }
