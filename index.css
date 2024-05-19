@@ -65,7 +65,7 @@ font-size: 2rem;
 color: #dce7e8;
 }
 #user,#comp,#sl{
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: oblique;
   text-align: center;
 }
@@ -73,6 +73,7 @@ color: #dce7e8;
   text-align: center;
   color: #021616;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 #mes{
   padding: .5rem;
