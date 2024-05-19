@@ -52,7 +52,7 @@ font-family:Georgia, 'Times New Roman', Times, serif;
     height: 300px;
     width: auto; 
     object-fit: cover;
-    border-radius: 20%;
+    border-radius: 30%;
     border-style: groove;
   }
 .scoreboard{
@@ -89,14 +89,14 @@ color: #dce7e8;
   }
   
   .choice img {
-    max-height: 300px; /* Initial height */
+    max-height: 200px; /* Initial height */
     width: auto; /* Initial width */
     border-radius: 20%;
     border-style: groove;
   }
   .scoreboard {
     flex-direction: column;
-     font-size: 3vw;
+     font-size: 2vw;
     gap: 1rem;
   }
 }
